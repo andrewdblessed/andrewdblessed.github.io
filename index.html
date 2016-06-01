@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SKI-LEARN - Learn More, Think More, Archive More</title>
+	<!-- META TAGS -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Ski Learn">
+	<meta name="description" content="Ski-Learn is a online educational platform the focuses on making learning easy">
+
+	<!-- STYLES -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/animsition.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/material-kit.css">
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+</head>
+<body class="animsition">
+		<!-- HERO SECTION  -->
+	<div class="site-hero ">
+		<div class=" bird-box">
+			<div class="logo">
+
+		<ul class="slides">
+			<li>
+				<div><span class="small-title uppercase montserrat-text">Welcome To</span></div>
+				<div class="big-title uppercase montserrat-text">Ski-Learn</div>
+				<h3>An online platform that uses various machine learning algorithm to help students study Faster and better than before.</h3>
+				<a href="pre-register/signin.html" class="btn btn-info btn-raised btn-round">
+					Pre-Register
+				</a>
+				<a type="button" class="btn btn-info btn-raised btn-round">
+					Take Survey
+				</a><br>
+				<a href="https://twitter.com/basictechy" class="btn btn-success btn-raised btn-round">
+					Meet Andrew Ben Richard <i class="fa fa-twitter-square"></i>
+				</a>
+				<a type="button" class="btn btn-success btn-raised btn-round">
+					Crowd Fund Us @ Indiegogo <i class="fa fa-thumbs-up"></i>
+				</a>
+			</li>
+			<!-- <li>
+				<div><span class="small-title uppercase montserrat-text">Coming soon</span></div>
+				<div class="big-title uppercase montserrat-text">Feel free to Pre-register</div>
+				<p>You are free to pre-register to Ski-learn and also to take our questaionaire</p>
+				<a type="button" class="btn btn-info btn-raised">
+					Pre-Register
+				</a>
+				<a type="button" class="btn btn-info btn-raised">
+					Take Survey
+				</a>
+			</li> -->
+		</ul>
+<style media="screen">
+.willo {
+    color: #3EBDF6;
+    position: absolute;
+    top: 96%;
+    left: 31%;
+    font-size: x-large;
+    font-weight: bold;
+}
+</style>
+		</div>
+		<div class="col-md-12 willo" >
+			<p>
+				Coming to you by Andrew Ben Richard.
+			</p>
+		</div>
+		</div>
+	</div>
+
+	<!-- SCRIPTS -->
+	<script type="text/javascript" src="assets/js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.flexslider.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.animsition.min.js"></script>
+	<script type="text/javascript" src="assets/js/wow.min.js"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
+
+	<script type="text/javascript" charset="utf-8">
+		$(window).load(function() {
+			new WOW().init();
+
+			// initialise flexslider
+			$('.site-hero').flexslider({
+				animation: "fade",
+				directionNav: false,
+				controlNav: false,
+				keyboardNav: true,
+				slideToStart: 0,
+				animationLoop: true,
+				pauseOnHover: false,
+				slideshowSpeed: 4000,
+			});
+
+
+			// initialize isotope
+			var $container = $('.portfolio_container');
+			$container.isotope({
+				filter: '*',
+			});
+
+			$('.portfolio_filter a').click(function(){
+				$('.portfolio_filter .active').removeClass('active');
+				$(this).addClass('active');
+
+				var selector = $(this).attr('data-filter');
+				$container.isotope({
+					filter: selector,
+					animationOptions: {
+						duration: 500,
+						animationEngine : "jquery"
+					}
+				});
+				return false;
+			});
+		});
+	</script>
+</body>
+</html>
